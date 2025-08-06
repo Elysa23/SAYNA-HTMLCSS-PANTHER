@@ -1,4 +1,296 @@
+* {
+  box-sizing: border-box; /*Pöur éviter les débordements des contenus*/
+}
+
 body {
   color: white;
   background-color: black;
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 5vw;
+
+  font-size: 16px;
+  font-family: "Cantarell", sans-serif;
+ 
+}
+
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 10vh;
+
+  margin-right: 20px;
+  margin-left: 20px;
+ 
+}
+
+header {
+  display: inline-flex;
+  justify-content: space-between;
+
+  max-width: 100%;
+}
+
+header div {
+  display: flex; /*Pour aligner les images sur une ligne*/
+  align-items: center; /*Centrer les images verticalement*/
+  gap: 3px;
+}
+
+/*Ajuster les tailles des images selon l'attente sur la maquette, en fonction du parent*/
+
+header div img:first-of-type {
+  width: 1.5vw;
+  height: auto;
+}
+
+header div img:nth-of-type(2) {
+  width: 1vw;
+  height: auto;
+}
+
+header div img:nth-of-type(3) {
+  width: 4.5vw;
+  height: auto;
+}
+
+header nav ul {
+  display: flex; /*Aligner les éléments sur une ligne*/
+  gap: 50px;
+
+  max-width: 100%;
+}
+header nav ul li {
+  list-style: none;
+}
+
+header nav ul li a {
+  text-decoration: none;
+}
+
+/*Black PAnther et Wakanda*/
+
+.blackWakanda {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.wakanda {
+  margin: auto 0;
+}
+.pantherhome1 {
+  width: 220%;
+}
+
+/*Killmonger et Okoye*/
+
+.allies {
+  display: flex;
+  flex-direction: row;
+
+  position: relative;
+
+  width: 100%;
+  max-width: fit-content;
+  gap: 20px;
+}
+
+figure {
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  align-items: stretch;
+}
+
+figure:first-of-type div img {
+  width: 15vw;
+}
+
+figure:nth-of-type(2) div:first-child img {
+  width: 12vw;
+}
+
+figure:nth-of-type(2) div:last-child img {
+  width: 9vw;
+}
+
+
+/*Tchalla*/
+
+.tchalla{
+  /*display: flex;
+  flex-direction: row;
+  gap: 50px;*/
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 10vw;
+
+  text-align: justify;
+}
+
+.carteTchalla{
+  text-align: center;
+  
+}
+
+.carteTchalla div:first-of-type{
+  margin-bottom: -200px;
+  margin-right: 165px;
+}
+
+.carteTchalla div:first-of-type img{
+  width: 264px;
+  height: auto;
+  max-width: 100%;
+  
+}
+
+.tchallaBio{
+  background-color: rgb(238, 234, 234);
+  color: black;
+  width: 350px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 10px;
+  padding-top: 200px;
+  border-radius: 5px;
+
+}
+
+.tchallaBio ul li {
+  list-style: none;
+}
+
+.tchallaBio ul:first-of-type {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: left;
+}
+
+.tchallaBio ul:nth-of-type(2) li {
+  text-align: left;
+  line-height: 1.8;
+}
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+  box-sizing: border-box;
+}
+
+.contact form input{
+  width: 100%;
+  border: black thin;
+  border-radius: 10px;
+}
+
+.contact form input[type=submit]{
+  width:30%;
+  padding: 10px 25px 10px 25px;
+  border-radius: 20px;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logos{
+  /*margin-top: -230px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.logosSuperposés{
+ /* display: flex;
+  flex-direction: column;
+  align-items: center;
+ /* justify-content: center;*/
+ /* width: 25%;*/
+ /*height: 270px;*/
+ position: relative;
+ width:30%;
+ height: auto;
+
+}
+
+.logosSuperposés > img{
+  max-width: 100%;
+ /* object-fit: contain;*/
+/*  width: 70%;
+  height: auto;
+  display: block;*/
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/*FOOTER*/
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto auto;
+  gap : 70px
+}
+
+.pagesFooter{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.reseauxSociaux{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.copyright{
+  grid-column: 1 /span 2;
+  grid-row: 2;
+
+}
+
+.logosFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyright ul {
+display: inline; /*Mbola tsy mety*/
+}
+
+.pagesFooter ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.pagesFooter ul li a {
+  text-decoration: none;
+  
 }
