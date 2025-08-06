@@ -206,14 +206,6 @@ figure:nth-of-type(2) div:last-child img {
   border-radius: 20px;
 }
 
-footer{
-  display: flex;
-  flex-direction: row;
-  margin-top: 15vh;
-  margin-bottom: 15vh;
-  justify-content: space-around;
-  align-items: center;
-}
 
 .logos{
   /*margin-top: -230px;*/
@@ -252,11 +244,27 @@ footer{
 
 /*FOOTER*/
 
+footer{
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("./Illustrations_Logo/All_Pages/back_footer.png");
+
+}
+
+
 .footer {
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-template-rows: auto auto;
-  gap : 70px
+  gap : 70px;
+
+
 }
 
 .pagesFooter{
