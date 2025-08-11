@@ -13,6 +13,25 @@ body{
     background-color: #021740;
     font-family: 'Cantarell';
     font-size: 16px;
+
+    background-image: url('./Illustrations_Logo/Wakanda/Pantherwakanda1.png'), url('./Illustrations_Logo/Wakanda/Pantherwakanda2.png');
+    background-repeat: no-repeat no-repeat;
+    background-position: top, center;
+    /*background-size: 1890px 1758px;*/
+  
+
+    
+}
+
+main{
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 1fr 3fr;
+}
+
+header{
+
+
 }
 
 p{
@@ -22,4 +41,9 @@ p{
 h1,h2{
     color: #F2CEF2;
     font-family: 'BEYNO';
+}
+
+.wakanda{
+    display: flex;
+    justify-content: flex-start;
 }
