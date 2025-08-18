@@ -3,6 +3,21 @@
     src: url('./fonts/beyno/BEYNO/BEYNO.otf') format('opentype');
 }
 
+@font-face {
+    font-family: 'Wakanda Forever';
+    src: url('./fonts/wakandaForever/WakandaForever-Regular.woff') format('woff');
+}
+
+/*@font-face {
+    font-family: 'Wakanda Forever';
+    src: url('WakandaForever-Regular.woff2') format('woff2'),
+        url('WakandaForever-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+*/
+
 .cantarell-regular {
   font-family: "Cantarell", sans-serif;
   font-weight: 400;
@@ -64,6 +79,7 @@ header nav ul li a{
     text-decoration: none;
     color: white;
 }
+
 p{
     color: #ffff;
 }
@@ -72,6 +88,9 @@ h1,h2{
     color: #F2CEF2;
     font-family: 'BEYNO';
 }
+
+
+/* SECTION 1 WAKANDA FOREVER*/
 
 .wakanda{
     display: flex;
@@ -97,7 +116,10 @@ margin-top: -65vh;
 margin-right: -30vw;
 }
 
+.wakanda div:nth-of-type(2) h2{
+font-family: 'Wakanda Forever' ;
 
+}
 
 .wakanda p{
     width : 35%;
@@ -116,8 +138,112 @@ margin-right: -30vw;
 
 }
 
+.videoYoutubeWakanda{
+    color: #ffff;
+    font-size: 14px;
+    margin-top: 50px;
+    padding-left: 34px;
+    padding-right: 40px;
+    padding-top: 30px;
+    padding-bottom: 100px;
+    background-color: #07338c;
+}
+
 .forceAnecdotes div:nth-of-type(2) img{
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+
+/*FOOTER*/
+
+.logos{
+  /*margin-top: -230px;*/
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.logosSuperposés{
+ /* display: flex;
+  flex-direction: column;
+  align-items: center;
+ /* justify-content: center;*/
+ /* width: 25%;*/
+ /*height: 270px;*/
+ position: relative;
+ width:30%;
+ height: auto;
+
+}
+
+.logosSuperposés > img{
+  max-width: 100%;
+ /* object-fit: contain;*/
+/*  width: 70%;
+  height: auto;
+  display: block;*/
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+footer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("./Illustrations_Logo/All_Pages/back_footer.png");
+
+}
+
+
+.footer {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-template-rows: auto auto;
+  gap : 70px;
+
+
+}
+
+.pagesFooter{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.reseauxSociaux{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.copyright{
+  grid-column: 1 /span 2;
+  grid-row: 2;
+
+}
+
+.logosFooter{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.copyright ul {
+display: inline; /*Mbola tsy mety*/
+}
+
+.pagesFooter ul{
+  list-style: none;
+  padding-left: 0;
+}
+
+.pagesFooter ul li a {
+  text-decoration: none;
+  
 }

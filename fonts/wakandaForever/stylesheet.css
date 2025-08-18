@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Wakanda Forever';
+    src: url('WakandaForever-Regular.woff2') format('woff2'),
+        url('WakandaForever-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
